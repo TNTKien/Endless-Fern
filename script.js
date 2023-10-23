@@ -7,7 +7,7 @@ window.onscroll = function() {
     // }
 
     //var fernHeight = maxHeightScrolled*0.05645;
-    var fernHeight = heightScrolled*0.05645;
+    var fernHeight = heightScrolled*0.05645 + 165;
 
     var heightScrolledElement = document.getElementById("header");
     heightScrolledElement.innerHTML = "Your Fern now is " + fernHeight + "cm";
