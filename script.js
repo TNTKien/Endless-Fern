@@ -6,8 +6,8 @@ window.onscroll = function() {
     //     maxHeightScrolled = heightScrolled;
     // }
 
-    //var fernHeight = maxHeightScrolled*0.05645 + 165;
-    var fernHeight = heightScrolled*0.05645 + 165;
+    //var fernHeight = maxHeightScrolled*0.05645;
+    var fernHeight = heightScrolled*0.05645;
 
     var heightScrolledElement = document.getElementById("header");
     heightScrolledElement.innerHTML = "Your Fern now is " + fernHeight + "cm";
@@ -27,4 +27,5 @@ window.onscroll = function() {
 var backToTopButton = document.getElementById("back-to-top");
 backToTopButton.addEventListener("click", function() {
     window.scrollTo(0, 0);
+    
 });
