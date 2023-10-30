@@ -2,15 +2,10 @@ var maxHeightScrolled = 0;
 window.onscroll = function() {
     var heightScrolled = window.scrollY;
 
-    // if (heightScrolled > maxHeightScrolled) {
-    //     maxHeightScrolled = heightScrolled;
-    // }
-
-    //var fernHeight = maxHeightScrolled*0.05645;
     var fernHeight = heightScrolled*0.05645 + 165;
 
-    var heightScrolledElement = document.getElementById("header");
-    heightScrolledElement.innerHTML = "Your Fern now is " + fernHeight + "cm";
+    var heightScrolledElement = document.getElementById("headerText");
+    heightScrolledElement.innerHTML = "Your Fern now is " + fernHeight.toFixed() + "cm";
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         var imageContainer = document.getElementById("image-container");
         imageContainer.innerHTML += `
