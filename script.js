@@ -24,3 +24,10 @@ backToTopButton.addEventListener("click", function() {
     window.scrollTo(0, 0);
     
 });
+
+async function logMovies() {
+  const response = await fetch("https://dummy.restapiexample.com/api/v1/employees");
+  const movies = await response.json();
+  console.log(movies);
+}
+logMovies()
